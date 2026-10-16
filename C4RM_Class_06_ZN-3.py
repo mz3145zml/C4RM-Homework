@@ -76,7 +76,7 @@ def percent_var(r, alpha):
 def es(losses, alpha=None, VaR=None):
     """Calculate expected shortfall from positively stated losses.
 
-    If ``VaR`` is omitted, it is calculated as the (1 - alpha) percentile of
+    If ``VaR`` is omitted, it is calculated as the alpha percentile of
     the losses. ES is the mean of losses strictly greater than that threshold.
     """
     loss_values = np.asarray(losses, dtype=float).reshape(-1)
